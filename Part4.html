@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/part4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reservation Request</h1>
+        <form id="reservationForm">
+          <fieldset>
+            <legend>General Information</legend>
+    
+            <div class="form-group">
+              <label for="arrivalDate">Arrival Date:</label>
+              <input type="date" id="arrivalDate" name="arrivalDate" required>
+               
+            </div>
+    
+            <div class="form-group">
+              <label for="nights">Nights:</label>
+              <input type="number" id="nights" name="nights" required>
+              <span id="Must be numeric">Must be numeric</span>
+            </div>
+    
+            <div class="form-group">
+              <label for="adults">Adults:</label>
+              <select id="adults" name="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+    
+            <div class="form-group">
+              <label for="children">Children:</label>
+              <select id="children" name="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Preferences</legend>
+    
+            <div class="preferences">
+            <label for="Room type">Room type:</label>&nbsp;
+              <input type="radio" name="roomType" value="standard" checked> Standard</label>&nbsp;
+              <input type="radio" name="roomType" value="business"> Business</label>&nbsp;
+              <input type="radio" name="roomType" value="suite"> Suite</label>&nbsp;
+            </div>
+    
+            <div class="preferences">
+                <label for="Bed type">bed Type:</label>
+              <input type="radio" name="bedType" value="king" checked> King</label>
+              <input type="radio" name="bedType" value="double"> Double Double</label>
+            </div>
+    
+            <div class="preferences">
+              <label><input type="checkbox" name="smoking"> Smoking</label>
+            </div>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Contact Information</legend>
+    
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <span id="Must be a valid address">Must be a valid address</span>
+            </div>
+    
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" name="phone" required>
+              <span id="this field is required">This is fiels is required</span>
+            </div>
+          </fieldset>
+    
+          <div class="form-footer">
+            <button id="submit" type="submit">Submit Request</button>
+          </div>
+        </form>
+        <footer>
+          <script src="js/part4.js"></script>
+          <p>&copy; "Abdulrahman Ghazal/n01642486" - 2024</p>
+        </footer>
+      </div>
+    </body>
+    </html>
+    
